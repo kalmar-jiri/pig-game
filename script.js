@@ -86,6 +86,7 @@ btnHold.addEventListener('click', () => {
         .classList.remove('player--active');
       diceEl.classList.add('hidden');
       btnNew.classList.add('new--end');
+      document.querySelector(`#current--${activePlayer}`).textContent = 0;
     } else {
       swtichPlayer();
     }
